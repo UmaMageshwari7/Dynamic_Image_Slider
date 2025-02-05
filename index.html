@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Slider</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+
+            <img src="./1.jpg" class="m1" alt="Image 1">
+            <img src="./2.jpg" class="m2" alt="Image 2">
+            <img src="./3.jpg" class="m3" alt="Image 3">
+            <img src="./4.jpg" class="m4" alt="Image 4">
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Dots -->
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
